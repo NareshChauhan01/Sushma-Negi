@@ -532,3 +532,329 @@ header li a {
 }
 
 /* Medical Services Section End */
+
+
+/* Get In Touch Start */
+.get-in-touch-section {
+  background: linear-gradient(135deg, #F5FBFF 0%, #F6FCFF 50%, #EEF9F4 100%);
+  padding: 4rem 0;
+}
+
+.appointment-form {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.get-in-touch-left {
+  background-color: white;
+  height: max-content;
+}
+
+.get-in-touch-left {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.get-in-touch-heading {
+  color: var(--primary-text-color);
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.from-group-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.form-group input {
+  width: 100%;
+  background: #EEF8FF;
+  padding: 12px 18px;
+  border: 1px solid #D7E8F6;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  /* resize: none; */
+  height: 140px;
+  background: #EEF8FF;
+  border: 1px solid #D7E8F6;
+}
+
+.get-in-touch-left button {
+  margin: 2rem 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+  background-color: var(--primary-text-color);
+  color: white;
+  transition: .2s ease-out;
+}
+
+.get-in-touch-left button:hover {
+  background-color: #173163;
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  height: max-content;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.contact-card span {
+  background-color: #cdf4e4;
+  width: max-content;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #307056;
+}
+
+.contact-card>div:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #243E90;
+  margin-bottom: 15px;
+}
+
+.contact-info .contact-card p {
+  color: #5F6877;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+/*  */
+
+
+.location-card {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.location-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: .5s;
+}
+
+.location-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Dark Gradient Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(17, 24, 39, .75),
+      rgba(17, 24, 39, .2),
+      rgba(17, 24, 39, .05));
+}
+
+/* Text */
+.location-content {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  color: #fff;
+  z-index: 2;
+}
+
+.location-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.location-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, .9);
+  margin-bottom: 20px;
+}
+
+.location-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: .3s;
+}
+
+.location-content a:hover {
+  gap: 14px;
+}
+
+/*  */
+.medical-emergency {
+  background: #FFF2F2;
+  border-left: 5px solid #EF4444;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  margin-top: 4rem;
+}
+
+.emergency-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7F1D1D;
+  margin-bottom: 14px;
+}
+
+.emergency-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #9B3D3D;
+  margin-bottom: 22px;
+}
+
+.btn-emergency {
+  padding: 12px 26px;
+  border: none;
+  border-radius: 10px;
+  background: #DC2626;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-emergency:hover {
+  background: #B91C1C;
+  transform: translateY(-2px);
+}
+
+/* Get In Touch End */
+
+/*New-Patients-Section Start */
+.new-patients-section {
+  padding: 4rem 0;
+  color: white;
+}
+
+.new-patients-content {
+  background: linear-gradient(135deg, #243E90 0%, #176B97 50%, #0E9B87 100%);
+  padding: 3rem 2rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.new-patients-section h2 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.new-patients-para {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: rgba(255, 255, 255, .9);
+  font-size: 15px;
+}
+
+.new-patient-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-book,
+.btn-call {
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-book {
+  background: #FFFFFF;
+  color: #243E90;
+}
+
+.btn-book:hover {
+  background: #F4F4F4;
+}
+
+.btn-call {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.btn-call:hover {
+  background: #FFFFFF;
+  color: #243E90;
+}
+
+/*New-Patients-Section End */
+
+
+/* Footer Start */
+.footer {
+  background: var(--primary-text-color);
+  padding: 22px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Footer End */
