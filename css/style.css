@@ -178,7 +178,6 @@ header li a {
   justify-content: center;
   align-items: center;
   color: #307056;
-  ;
 }
 
 .hero-section .hero-strength div span:nth-child(2) {
@@ -246,7 +245,7 @@ header li a {
   color: var(--lightgreen-text-color);
 }
 
-.heading div:nth-child(2) {
+.heading .sub-heading {
   font-size: 2.5rem;
   font-weight: 600;
   font-family: "Rajdhani", sans-serif;
@@ -254,7 +253,7 @@ header li a {
   margin: 12px 0;
 }
 
-.heading div:nth-child(3) {
+.heading .heading-para {
   width: 69%;
   text-align: center;
   color: var(--gray-text-color);
@@ -264,7 +263,7 @@ header li a {
   padding: 2rem 0;
 }
 
-.about-content {
+.about-content-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -308,7 +307,77 @@ header li a {
   line-height: 1.8;
   color: #6B7280;
   margin-bottom: 20px;
-  /* font-weight: 500; */
+}
+
+/* About-Details */
+
+.about-section .about-details {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+.about-section .card {
+  background-color: white;
+  padding: 40px 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .card svg {
+  width: 15px;
+  height: 15px;
+  background-color: #cdf4e4;
+  color: #307056;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about-section .card div:nth-child(2) {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+
+.about-section .card div:nth-child(3) {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--gray-text-color);
+}
+
+/* Core Value */
+.about-core-value {
+  padding: 3rem 0;
+}
+
+.core-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+  margin: 2rem 0;
+}
+
+.about-section .core-value {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.about-section .core-value div:nth-child(1) {
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about-section .core-value div:nth-child(2) {
+  font-size: 13px;
+  color: var(--gray-text-color);
 }
 
 /* About Section End */
