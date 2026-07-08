@@ -3,6 +3,7 @@
 A modern and responsive Doctor Portfolio Website built using **HTML, CSS, and JavaScript**. This project showcases a professional healthcare landing page with a clean user interface, doctor profile, services, appointment call-to-action, and responsive design.
 
 ## 🚀 Live Demo
+https://nareshchauhan01.github.io/Sushma-Negi/
 
 ## 📂 GitHub Repository
 
