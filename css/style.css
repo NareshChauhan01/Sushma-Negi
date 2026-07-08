@@ -18,10 +18,24 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#about {
+  scroll-margin-top: 20px;
+}
+
+#service {
+  scroll-margin-top: 15px;
+}
+
+#contact {
+  scroll-margin-top: 0px;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
@@ -33,7 +47,10 @@ li {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 4rem 0;
 }
 
 .b {
@@ -42,6 +59,10 @@ li {
 
 /* Header Section Start */
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
   background-color: white;
   padding: 10px 0;
   box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
@@ -78,16 +99,14 @@ header li a {
 
 /* Hero Section Start */
 .hero-section {
-  min-height: calc(100vh - 50px);
   background: linear-gradient(90deg, #e7f4ff 0%, #f9fdff 50%, #eef9f0 100%);
-  padding: 0px 0px 2rem 0px;
 }
 
 .hero-section .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  padding: 4rem 0;
 }
 
 .hero-section .left-hero-section {
@@ -259,10 +278,6 @@ header li a {
   color: var(--gray-text-color);
 }
 
-.about-section {
-  padding: 2rem 0;
-}
-
 .about-content-row {
   display: flex;
   align-items: center;
@@ -352,7 +367,7 @@ header li a {
 
 /* Core Value */
 .about-core-value {
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 
 .core-details {
@@ -383,28 +398,25 @@ header li a {
 /* About Section End */
 
 /* Medical Services Section Start */
-.medical-services-section {
-  padding: 2rem 0;
-}
 
 .medical-services-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .service-card {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 25px 18px;
   border-radius: 20px;
   background: linear-gradient(135deg, #EAF8FF, #EAF9F3);
-  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
-  gap: 12px;
+  gap: 15px;
   cursor: pointer;
+  color: var(--gray-text-color);
 }
 
 .service-card svg {
@@ -434,7 +446,7 @@ header li a {
 
 /* Your-Care-Journey */
 .your-care-journey {
-  margin: 4rem 0;
+  margin-top: 4rem;
   color: #FFFFFF;
 }
 
@@ -483,7 +495,7 @@ header li a {
 .care-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 4rem 0;
+  margin-top: 4rem;
   gap: 2rem;
 }
 
@@ -521,6 +533,7 @@ header li a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: var(--gray-text-color);
 }
 
 .care-info ul li {
@@ -533,15 +546,13 @@ header li a {
 
 /* Medical Services Section End */
 
-
 /* Get In Touch Start */
 .get-in-touch-section {
   background: linear-gradient(135deg, #F5FBFF 0%, #F6FCFF 50%, #EEF9F4 100%);
-  padding: 4rem 0;
 }
 
 .appointment-form {
-  margin: 4rem 0;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -571,7 +582,6 @@ header li a {
 }
 
 .form-row {
-  /* border: 1px solid red; */
   display: flex;
   gap: 12px;
 }
@@ -597,7 +607,6 @@ header li a {
 }
 
 .form-group textarea {
-  /* resize: none; */
   height: 140px;
   background: #EEF8FF;
   border: 1px solid #D7E8F6;
@@ -663,8 +672,6 @@ header li a {
 }
 
 /*  */
-
-
 .location-card {
   position: relative;
   width: 100%;
@@ -692,10 +699,7 @@ header li a {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(17, 24, 39, .75),
-      rgba(17, 24, 39, .2),
-      rgba(17, 24, 39, .05));
+  background: linear-gradient(to top, rgba(17, 24, 39, .75), rgba(17, 24, 39, .2), rgba(17, 24, 39, .05));
 }
 
 /* Text */
@@ -778,7 +782,6 @@ header li a {
 
 /*New-Patients-Section Start */
 .new-patients-section {
-  padding: 4rem 0;
   color: white;
 }
 
@@ -793,9 +796,10 @@ header li a {
 
 .new-patients-section h2 {
   color: #FFFFFF;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 15px;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .new-patients-para {
@@ -843,17 +847,16 @@ header li a {
 
 /*New-Patients-Section End */
 
-
 /* Footer Start */
 .footer {
   background: var(--primary-text-color);
-  padding: 22px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
 .footer p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 15px;
+  color: rgb(144, 143, 143);
+  font-size: 13px;
   font-weight: 400;
 }
 
