@@ -1,0 +1,302 @@
+/* Responsive Code */
+
+@media (max-width:992px) {
+  .container {
+    padding: 0px 1.5rem;
+  }
+
+  /*Hero Section  */
+  .hero-section .hero-strength {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  /* Medical Services Section Start */
+  .medical-services-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width:992px) {
+
+  /*Get In Touch Start */
+  .appointment-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+
+  /* Navbar */
+  header nav {
+    height: 40px;
+  }
+
+  .sub-header {
+    position: relative;
+    padding: 0 1rem;
+  }
+
+  .nav-button {
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+    backdrop-filter: blur(16px);
+    position: absolute;
+    top: 3.3rem;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-140%);
+    transition: all 0.4s linear;
+    z-index: -1;
+  }
+
+  .nav-button ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .active .nav-button {
+    transform: translateY(0%);
+  }
+
+  .active .hamburger-icon {
+    display: none;
+  }
+
+  .active .hamburger-icon-container .x-mark {
+    display: block;
+  }
+
+  .active .hamburger-icon-container .x-mark i {
+    padding: 0;
+  }
+
+  .hamburger-icon-container {
+    display: block;
+  }
+
+  /* Hero Section */
+
+  .hero-section .hero-heading {
+    padding: 2px 8px;
+    border-radius: 40px;
+    font-weight: 400;
+  }
+
+  .hero-section .name {
+    font-size: 2rem;
+  }
+
+  .hero-section .hero-strength {
+    margin-top: 2rem;
+  }
+
+  .hero-section .hero-btn button {
+    border-radius: 25px;
+  }
+
+  .hero-section .hero-content {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  .hero-section .left-hero-section {
+    width: 60%;
+  }
+
+  .hero-section .right-hero-section {
+    width: 60%;
+  }
+
+  /* About */
+  .about-content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* About Details */
+  .about-section .about-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Medical Services Section Start */
+  .medical-services-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Your-Care-Journey */
+  .your-care-journey .student-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card,
+  .gallery-card.large {
+    height: 350px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width:576px) {
+
+  /*Hero Section Start */
+  .hero-section .left-hero-section {
+    width: 85%;
+  }
+
+  .hero-section .right-hero-section {
+    width: 85%;
+  }
+
+  .hero-section .hero-heading {
+    padding: 8px 12px;
+    background-color: #c8f0df;
+    width: max-content;
+    border-radius: 50px;
+    font-weight: 500;
+    color: var(--lightgreen-text-color);
+  }
+
+  /* About  */
+  .heading .sub-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width:400px) {
+  .container {
+    padding: 10px;
+  }
+
+  .section-padding {
+    padding: 2rem 0;
+  }
+
+  .hero-section .left-hero-section {
+    width: 100%;
+  }
+
+  .hero-section .right-hero-section {
+    width: 100%;
+  }
+
+  .hero-section .para {
+    text-align: start;
+  }
+
+  .hero-section .hero-btn button {
+    border-radius: 10px;
+  }
+
+  .hero-section .hero-heading {
+    border-radius: 10px;
+  }
+
+  /* About */
+  .heading .sub-heading {
+    font-size: 2rem;
+  }
+
+  .heading .heading-para {
+    width: 100%;
+  }
+
+  .about-section .about-details {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  /* Core-details */
+  .core-details {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  /* Medical Services Section Start */
+  .medical-services-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  /* Your-Care-Journey */
+  .your-care-journey .student-info {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .student-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-info .student-info-box p:nth-child(3) {
+    text-align: center;
+  }
+
+  /* Care Info */
+  .care-info {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  /* Form */
+  .location-content h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .location-content,
+  .location-content p,
+  .location-content a {
+    color: var(--lightgreen-text-color);
+  }
+
+  .medical-emergency {
+    /* width: max-content; */
+    margin: 20 12px;
+  }
+
+  .new-patients-content {
+    padding: 2rem 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-book,
+  .btn-call {
+    border-radius: 10px;
+  }
+
+  .about-gallery {
+    font-family: Rajdhani, sans-serif;
+    padding: 20px 0px 30px 0px;
+    background: rgb(247, 251, 255);
+  }
+
+}

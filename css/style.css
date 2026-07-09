@@ -47,6 +47,7 @@ li {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0px 12px;
 }
 
 .section-padding {
@@ -61,7 +62,7 @@ li {
 header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   background-color: white;
   padding: 10px 0;
@@ -82,17 +83,63 @@ header nav span {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: max-content;
 }
 
 header ul {
   display: flex;
   gap: 2rem;
   user-select: none;
-
 }
 
 header li a {
   color: var(--gray-text-color);
+}
+
+/* Hamburger Icon */
+.sub-nav {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: transparent;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: end;
+  align-items: end;
+}
+
+.hamburger-icon span {
+  height: 4px;
+  background: #000;
+  border-radius: 6px;
+}
+
+.hamburger-icon span:nth-child(1) {
+  width: 40px;
+}
+
+.hamburger-icon span:nth-child(2) {
+  width: 32px;
+}
+
+.hamburger-icon span:nth-child(3) {
+  width: 24px;
+}
+
+.hamburger-icon-container .x-mark {
+  display: none;
+  font-size: 1.8rem;
 }
 
 /* Header Section End */
@@ -327,9 +374,9 @@ header li a {
 /* About-Details */
 
 .about-section .about-details {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  flex: 1;
 }
 
 .about-section .card {
@@ -970,27 +1017,3 @@ header li a {
 }
 
 /* Footer End */
-
-
-@media(max-width:768px) {
-
-  .gallery-grid {
-
-    grid-template-columns: 1fr;
-
-  }
-
-  .gallery-card,
-  .gallery-card.large {
-
-    height: 350px;
-
-  }
-
-  .section-heading h2 {
-
-    font-size: 34px;
-
-  }
-
-}
